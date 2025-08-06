@@ -14,7 +14,7 @@ Dynamic programming
 Sliding window
 
 Array's:
-Two Sum
+1. Two Sum
 Problem Statement:
 Given a list of item prices, find indices of two items whose combined price equals a customer's gift biked value.
 Sample Input:
@@ -23,7 +23,7 @@ Expected Output:
 [0, 1]
 Explanation: The items at index 0 and 1 add up to 9 (2 + 7 = 9).
 
-Maximum Subarray (Kadan’s Algorithm)
+2. Maximum Subarray (Kadan’s Algorithm)
 Problem Statement:
 Find the contiguous period of maximum net income from daily financial logs.
 Sample Input:
@@ -33,7 +33,7 @@ Expected Output:
 Explanation: Subarray [4, -1, 2, 1] yields the highest sum.
 
 
-Move Zeroes
+3. Move Zeroes
 Problem Statement:
 Rearrange a delivery queue where zeros indicate unavailable trucks; push them to the end without disrupting the rest.
 
@@ -52,7 +52,7 @@ Rearrange a delivery queue where zeros indicate unavailable trucks; push them to
 	Output:
 	3,1,5,6,0,0,0,0,0
 
-Find Pivot Index
+4. Find Pivot Index
 	Problem Statement:
 	Determine the index at which the workload to its left equals the workload to its right.
 	Sample Input:
@@ -70,14 +70,14 @@ Find Pivot Index
 	0
 
 
-Find Second Max:
+5. Find Second Max:
 
 Input: 1, 7, 3, 6, 5, 6
 Output: 6
 
 
-Assignments:
-Best Time to Buy and Sell Stock
+Assignments1:
+1. Best Time to Buy and Sell Stock
 Problem Statement:
 Identify the best day to buy and the best day to sell for highest profit from historical stock prices.
 Sample Input:
@@ -93,20 +93,7 @@ Sample Input:
 	90, 40, 20, 10, 4
 	Best time to buy 10 best time to sell 4
 
-		Insert Interval
-		Problem Statement:
-		Insert a new booking and merge overlapping intervals in an existing schedule.
-
-		Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
-		Output: [[1,5],[6,9]]
-
-		Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
-		Output: [[1,2],[3,10],[12,16]]
-		Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
-
-
-
-	Sort Colors (Dutch National Flag)
+2. Sort Colors (Dutch National Flag)
 	Problem Statement:
 		Assume that your are part of support team in IRCTC app where customers would raise issue and it will be considered priority ticket such as 0, 1 and 2. now today tickets are in the bucket and you need to arrange it by priority
 		Example:
@@ -119,3 +106,100 @@ Sample Input:
 		Expected Output:
 		[0, 0, 1, 1, 2, 2]
 
+day2:
+1. In the super market end of each day finding the raised bills to customer with invoice number, now find the missing invoice of the day.
+		Example:
+		Input:
+		8,10,3,1,4,2,5
+		Output:
+		6
+		Input:
+		45,91,90,92,46
+		Output:
+		47
+		Input:
+		0,1,2,4,5,6,7
+		Output:
+		3
+
+2. Find and apply charges of 24 each extra debit more than 3 in last 10 transaction of your account which has credit and debit combination
+		Example:
+		Input:
+		900,1200,5600,120,450,670,100,10000,400,120
+		Output:
+		900,1200,5600,120,450,670,100,10000,400,96
+
+
+3. Insert Interval
+		Problem Statement:
+		Insert a new booking and merge overlapping intervals in an existing schedule.
+
+		Input: intervals = [[1,3],[6,9]], newInterval = [2,5]
+		Output: [[1,5],[6,9]]
+
+		Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]
+		Output: [[1,2],[3,10],[12,16]]
+		Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
+
+
+4. Given an array nums of positive integers of size N. Find all distinct digits present in nums.
+		Example 1:
+		Input: nums = [131, 11, 48]
+		Output: 1 3 4 8
+		Explanation: 1, 3, 4, and 8 are only distinct
+		digits that can be extracted from the numbers
+		of the array.
+		Example 2:
+		Input: nums = [111, 222, 333, 4444, 666]
+		Output: 1 2 3 4 6
+		Explanation: 1, 2, 3, 4, and 6 are only distinct
+		digits that can be extracted from the numbers
+		of the array.
+
+
+5. Twisted prime
+Note: A number is called Twisted Prime if it is a prime and its reverse is also a prime.
+Example 1:
+Input: N = 97
+Output: 1
+Explanation: 97 is a prime number. Its 
+reverse 79 is also a prime number. Thus 
+97 is a  twisted Prime and so, the answer is 1.
+Example 2:
+Input: N = 43
+Output: 0
+Explanation: 43 is a prime number but its 
+reverse 34 is not a prime.So, 43 is not a 
+twisted prime and thus, answer is 0.
+
+6. Find the least prime number within the boundary that can be added with first array element that makes them divisible by second array elements at respective index
+		Input:
+		int[] arr1 = {3, 5, 7};
+		int[] arr2 = {10, 15, 20};
+		Output:
+		7 -1 13 
+		Input:
+		int[] arr1 = {4, 6, 8};
+		int[] arr2 = {5, 10, 15};
+		Output:
+		-1 -1 -1
+
+
+Assignments2:
+1. Rotate Image
+Problem Statement:
+Design a tool that rotates an image represented as a 2D matrix by 90° clockwise — useful for layout and orientation tasks.
+Sample Input:
+matrix = [[1,2,3], [4,5,6], [7,8,9]]
+Expected Output:
+[[7,4,1], [8,5,2], [9,6,3]]
+Explanation: The matrix is rotated layer by layer.
+
+2. 3Sum
+Problem Statement:
+Check if any three contributors can offset a financial loss or debt exactly to zero.
+Sample Input:
+nums = [-1, 0, 1, 2, -1, -4]
+Expected Output:
+[[-1, -1, 2], [-1, 0, 1]]
+Explanation: These triplets sum to zero.
