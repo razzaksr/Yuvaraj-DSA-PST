@@ -13,6 +13,17 @@ Divide and conquer/ recursion
 Dynamic programming
 Sliding window
 
+LLD:
+Loan Application System
+	•	Domain Model: LoanRequest
+	•	Attributes: Application ID, Applicant Name, Amount Requested, Status
+	•	CRUD Operations: 
+			o	Submit a loan application
+			o	View applications
+			o	Update status (approved/rejected)
+			o	Delete canceled requests
+
+
 Array's:
 1. Two Sum
 Problem Statement:
@@ -203,3 +214,115 @@ nums = [-1, 0, 1, 2, -1, -4]
 Expected Output:
 [[-1, -1, 2], [-1, 0, 1]]
 Explanation: These triplets sum to zero.
+
+
+day3: Strings:
+1. Given two strings A and B, find if A is a subsequence of B.
+		Example 1:
+		Input:
+		A = TCS
+		B = Tata Service
+		Output: 0
+		Explanation: A is not a subsequence of B
+		as 'C' appears after 'S'
+		Example 2:
+		Input:
+		A = infy
+		B = infosys
+		Output: 1
+		Explanation: A is a subsequence of B.
+		Example 3:
+		Input:
+		A = cts
+		B = cognizant technology
+		Output: 0
+		Explanation: A is not a subsequence of B.
+2. Minimum Moves to Convert String
+You are given a string s consisting of n characters which are either 'X' or 'O'.
+A move is defined as selecting three consecutive characters of s and converting them to 'O'. Note that if a move is applied to the character 'O', it will stay the same.
+Return the minimum number of moves required so that all the characters of s are converted to 'O'.
+		Example 1:
+		Input: s = "XXX"
+		Output: 1	
+		Explanation: XXX -> OOO
+		We select all the 3 characters and convert them in one move.
+		Example 2:
+		Input: s = "XXOX"
+		Output: 2
+		Explanation: XXOX -> OOOX -> OOOO
+We select the first 3 characters in the first move, and convert them to 'O'.
+Then we select the last 3 characters and convert them so that the final string contains all 'O's.
+		Example 3:
+		Input: s = "OOOO"
+		Output: 0
+Explanation: There are no 'X's in s to convert.
+
+3. Validating IPV4
+		Input: s = "222.111.111.111"
+		Output: true
+		Explanation: Here, the IPv4 address is as per the criteria mentioned and also all four decimal numbers lies in the mentioned range.
+		Input: s = "5555..555"
+		Output: false
+		Explanation: "5555..555" is not a valid. IPv4 address, as the middle two 	portions are missing.
+		Input: s = "0.0.0.0255"
+		Output: false
+		Input: s = "111..111.111"
+		Output: false
+
+4. Group Anagrams
+		Problem Statement:
+		Cluster search queries or user aliases that are scrambled versions of each other — useful in NLP or search optimization.
+		Sample Input:
+		strs = ["eat","tea","tan","ate","nat","bat"]
+		Expected Output:
+		[["eat","tea","ate"], ["tan","nat"], ["bat"]]
+
+
+5. Consider that you are building console interface of customer's loan application where customer used to provide name, pan, aadhaar, email then they will set the password for their account. your role is to validate those information's using regex.
+Example:
+Input:
+Name: "Raz",
+Password: "razak$123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Account created
+
+Example:
+Input:
+Name: "Ra",
+Password: "razak$123",
+Aadhaar: "7654567",
+PAN: "ABCDE1234F",
+Email: "example@mail.com"
+
+Output:
+Invalid name, invalid aadhaar
+
+Example:
+Input:
+Name: "Raz",
+Password: "razak123",
+Aadhaar: "765456787912",
+PAN: "ABCDE1234F",
+Email: "example@mail.c"
+
+Output:
+Invalid password, invalid email
+
+
+
+
+Assignments3:
+1. Decode Ways
+Problem Statement:
+Determine how many possible interpretations exist for a numerical code, such as SMS-based encoding or secret unlocking patterns.
+Sample Input:
+s = "226"
+Expected Output:
+3
+Explanation: Interpretations include "2-2-6", "22-6", "2-26"
+
+2. Validate IPV4 using regex
